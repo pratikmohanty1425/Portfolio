@@ -210,6 +210,7 @@ img{
     border-radius: 50%;
     overflow: hidden;
     animation: spin 10s linear infinite;
+    
 }
 .effect-9 div{
     width: 4px;
