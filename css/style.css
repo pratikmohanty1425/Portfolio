@@ -167,6 +167,62 @@ img{
     width: 4px;
     background-color: #4dd0e1;
 }
+.effect-6{
+    width: 40px;
+    height: 40px;
+    border: 6px solid #8a49ff;
+    right: 90%;
+    bottom: -100%;
+    animation: spin 10s linear infinite;
+}
+.effect-7{
+    height: 200px;
+    width: 200px;
+    border: 25px solid var(--skin-color);
+    border-radius: 50%;
+    left: 90%;
+    bottom: -40%;
+    animation: leftBounce 3s ease-in-out infinite;
+}
+.effect-8{
+    border-top: 30px solid transparent;
+    border-left: 30px solid #06d79c;
+    left: 20%;
+    bottom:-20%;
+    animation: spin 15s linear infinite;
+}
+.effect-8:before{
+    content: '';
+    border-top: 30px solid transparent;
+    border-left: 30px solid #06d79c;
+    position: absolute;
+    opacity: 0.5;
+    left: -35px;
+    top: -25px;
+}
+.effect-9{
+    height: 140px;
+    width: 140px;
+    right: 10%;
+    bottom: -90%;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 50%;
+    overflow: hidden;
+    animation: spin 10s linear infinite;
+}
+.effect-9 div{
+    width: 4px;
+    background-color:coral;
+}
+.effect-10{
+    width: 40px;
+    height: 40px;
+    border: 6px solid #8a235f;
+    right: 6%;
+    bottom: -140%;
+    animation: spin 10s linear infinite;
+}
 @keyframes spin{
     0%{
         transform:rotate(0deg);
