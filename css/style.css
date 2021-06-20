@@ -188,7 +188,7 @@ img{
 .effect-8{
     border-top: 30px solid transparent;
     border-left: 30px solid #06d79c;
-    left: 20%;
+    left: 75%;
     bottom:-20%;
     animation: spin 15s linear infinite;
 }
@@ -204,8 +204,8 @@ img{
 .effect-9{
     height: 140px;
     width: 140px;
-    right: -5%;
-    bottom: -20%;
+    left: 5%;
+    bottom: -15%;
     display: flex;
     justify-content: space-between;
     border-radius: 50%;
