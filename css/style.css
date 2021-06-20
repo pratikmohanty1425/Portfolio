@@ -156,7 +156,7 @@ img{
 .effect-5{
     height: 120px;
     width: 120px;
-    right: 10%;
+    right: 8%;
     top: 30%;
     display: flex;
     justify-content: space-between;
@@ -205,7 +205,7 @@ img{
     height: 140px;
     width: 140px;
     left: 5%;
-    bottom: -15%;
+    bottom: -18.5%;
     display: flex;
     justify-content: space-between;
     border-radius: 50%;
@@ -224,6 +224,39 @@ img{
     right: 6%;
     bottom: -140%;
     animation: spin 10s linear infinite;
+}
+.effect-11{
+    width: 40px;
+    height: 40px;
+    border: 6px solid orange;
+    right: 93%;
+    bottom: -250%;
+    animation: spin 10s linear infinite;
+}
+.effect-12{
+    height: 100px;
+    width: 100px;
+    border: 15px solid var(--skin-color);
+    border-radius: 50%;
+    left: 80%;
+    bottom: -200%;
+    animation: leftBounce 3s ease-in-out infinite;
+}
+.effect-13{
+    border-top: 30px solid transparent;
+    border-left: 30px solid #06d79c;
+    left: 93%;
+    bottom:-290%;
+    animation: spin 15s linear infinite;
+}
+.effect-13:before{
+    content: '';
+    border-top: 30px solid transparent;
+    border-left: 30px solid #06d79c;
+    position: absolute;
+    opacity: 0.5;
+    left: -35px;
+    top: -25px;
 }
 @keyframes spin{
     0%{
