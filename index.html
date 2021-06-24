@@ -11,8 +11,10 @@
     
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700&display=swap" rel="stylesheet">
-    
+  <!-- skin css -->  
   <link rel="stylesheet" type="text/css" href="css/skins/color-1.css">
+    <!-- style switcher css --> 
+    <link rel="stylesheet" type="text/css" href="css/style-switcher.css">
 </head>
 <body>
 <header class="header">
@@ -33,19 +35,21 @@
     <div class="close-nav-menu outer-shadow hover-in-shadow">&times;</div> 
     <div class="nav-menu-inner">
         <ul>
-            <li><a href="#" class="inner-shadow active">Home</a></li>
-            <li><a href="#" class="outer-shadow hover-in-shadow">About</a></li>
-            <li><a href="#" class="outer-shadow hover-in-shadow">Services</a></li>
-            <li><a href="#" class="outer-shadow hover-in-shadow">Portfolio</a></li>
-            <li><a href="#" class="outer-shadow hover-in-shadow">Contact</a></li>
+            <li><a href="#home" class="link-item inner-shadow active">Home</a></li>
+            <li><a href="#about" class="link-item outer-shadow hover-in-shadow">About</a></li>
+            <li><a href="#services" class="link-item outer-shadow hover-in-shadow">Services</a></li>
+            <li><a href="#portfolio" class="link-item outer-shadow hover-in-shadow">Portfolio</a></li>
+            <li><a href="#contact" class="link-item outer-shadow hover-in-shadow">Contact</a></li>
         </ul>
     </div>
     <!--copy right-->
-    <p class="copyright-text">&copy; 2021 Pratik Mohanty</p>
+    <p class="copyright-text">&copy; 2021 Pratik Mohanty</p> 
 </nav>
     
+<div class="fade-out-effect"></div>  
+    
 <!--home section start-->
-<section class="home-section section">
+<section class="home-section section active" id="home">
     <!--effects-->
     <div class="effect-wrap">
         <div class="effect effect-1">
@@ -68,7 +72,7 @@
                 <p>Hello</p>
                 <h2>I'm Pratik Mohanty</h2>
                 <h1>Game Developer</h1>
-                <a href="#" class="btn-1 outer-shadow hover-in-shadow">More About Me</a>
+                <a href="#about" class="link-item btn-1 outer-shadow hover-in-shadow">More About Me</a>
             </div>
             <div class="home-img">
                 <div class="img-box inner-shadow">
@@ -80,18 +84,21 @@
 </section>
    
 <!--about-->
-<section class="about-section section">
+<section class="about-section section" id="about">
     <div class="container">
         
         <!--effects-->
-        <div class="effect-wrap">
-            <div class="effect effect-6">
-        </div><div class="effect effect-7">
-        </div><div class="effect effect-8">
-        </div><div class="effect effect-9">
-            <div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div>
-        </div><div class="effect effect-10">
-        </div></div>
+                <div class="effect effect-6">
+            </div>
+                <div class="effect effect-7">
+            </div>
+                <div class="effect effect-8">
+            </div>
+            <div class="effect effect-9">
+                <div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div>
+            </div>
+                <div class="effect effect-10">
+            </div>
         <!--effects-->
         
         <div class="row">
@@ -125,7 +132,7 @@
 
                     <p>I'm also good at communication, leadership & coding, and also I'm a quick learner & really hard working.</p>
                 <a href="cv.pdf" class="btn-1 outer-shadow hover-in-shadow">Download CV</a>
-                <a href="#" class=" btn-1 outer-shadow hover-in-shadow">Contact</a>
+                <a href="#contact" class="link-item btn-1 outer-shadow hover-in-shadow">Contact</a>
             </div>
         </div>
         <!--about ends-->
@@ -344,14 +351,11 @@
 <!--about end-->  
     
 <!--service section start-->   
-<section class="service-section section">
+<section class="service-section section" id="services">
     <!--effects-->
         <div class="effect-wrap">
-            <div class="effect effect-6">
-        </div><div class="effect effect-12">
+            <div class="effect effect-12">
         </div><div class="effect effect-13">
-        </div><div class="effect effect-9">
-            <div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div>
         </div><div class="effect effect-11">
         </div></div>
         <!--effects-->
@@ -432,6 +436,103 @@
     </div>
 </section>
 <!--service section ends-->   
+    
+<!--contact section--> 
+<section class="contact-section section" id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="section-title">
+                <h2 data-heading="Contact">Get In Touch</h2>
+            </div>
+        </div>
+        <div class="row">
+            <!--contact item--> 
+            <div class="contact-item">
+                <div class="contact-item-inner outer-shadow">
+                    <i class="fas fa-phone"></i>
+                    <span>Phone</span>
+                    <p>8260061883</p>
+                </div>
+            </div>
+            <!--contact item ends--> 
+            <!--contact item--> 
+            <div class="contact-item">
+                <div class="contact-item-inner outer-shadow">
+                    <i class="fas fa-envelope"></i>
+                    <span>Email</span>
+                    <p>Pratikmohanty1425@outlook.com</p>
+                </div>
+            </div>
+            <!--contact item ends--> 
+            <!--contact item--> 
+            <div class="contact-item">
+                <div class="contact-item-inner outer-shadow">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <span>Address</span>
+                    <p>Ideal Plaze, Bhubaneswar, Odisha, India</p>
+                </div>
+            </div>
+            <!--contact item ends--> 
+        </div>
+        <div class="row">
+            <div class="contact-form">
+                <form>
+                    <div class="row">
+                        <div class="w-50">
+                            <div class="input-group outer-shadow hover-in-shadow">
+                                <input type="text" placeholder="Name" class="input-control">
+                            </div>
+                            <div class="input-group outer-shadow hover-in-shadow">
+                                <input type="text" placeholder="Email" class="input-control">
+                            </div>
+                            <div class="input-group outer-shadow hover-in-shadow">
+                                <input type="text" placeholder="Subject" class="input-control">
+                            </div>
+                        </div>
+                        <div class="w-50">
+                            <div class="input-group outer-shadow hover-in-shadow">
+                                <textarea class="input-control" placeholder="Message">
+                                </textarea>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="submit-btn">
+                            <button type="submit" class="btn-1 outer-shadow hover-in-shadow">
+                            Send Message</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+<!--contact section ends--> 
+    
+<!--portfolio section--> 
+<section id="portfolio">
+    
+</section>
+<!--portfolio section ends--> 
+    
+<!--style switcher--> 
+<div class="style-switcher outer-shadow">
+    <div class="style-toggler s-icon outer-shadow hover-in-shadow">
+        <i class="fas fa-cog fa-spin"></i>
+    </div>
+    <div class="day-night s-icon outer-shadow hover-in-shadow">
+        <i class="fas fa-moon"></i>
+    </div>
+    <h4>Theme Color</h4>
+    <div class="colors">
+        <span class="color-1" onclick="setActiveStyle('color-1')"></span>
+        <span class="color-2" onclick="setActiveStyle('color-2')"></span>
+        <span class="color-3" onclick="setActiveStyle('color-3')"></span>
+        <span class="color-4" onclick="setActiveStyle('color-4')"></span>
+        <span class="color-5" onclick="setActiveStyle('color-5')"></span>
+    </div>
+</div>
+<!--style switcher ends--> 
 
 <!-- main js -->
 <script src="js/main.js"></script>
