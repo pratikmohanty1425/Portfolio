@@ -7,6 +7,10 @@
     z-index: 101;
     border-radius: 5px;
     transition: all 0.3s ease;
+    transform: translateX(100%);
+}
+.style-switcher.open{
+    transform: translateX(-15px);
 }
 .style-switcher .s-icon{
     position: absolute;
@@ -16,7 +20,7 @@
     font-size: 20px;
     color: var(--text-black-900);
     right: 100%;
-    margin: 15px;
+    margin:0 15px;
     cursor: pointer;
     transition: all 0.3s ease;
     border-radius: 50%;
@@ -27,7 +31,7 @@
 .style-switcher .s-icon:after{
     border-radius: 50%;
 }
-.style-switcher .style-toggler{
+.style-switcher .style-switcher-toggler{
     top: 0;
 }
 .style-switcher .day-night{
