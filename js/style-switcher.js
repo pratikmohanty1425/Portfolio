@@ -16,14 +16,22 @@ window.addEventListener("scroll",()=>{
 const altstyl = document.querySelectorAll(".alternate-styles");
 
 function setActiveStyle(color){
+    localStorage.setItem("color",color);
+    changecolor();
+}
+function changecolor(){
     altstyl.forEach((style) =>{
-        if(color === style.getAttribute("title")){
+        if(localStorage.getItem("color") === style.getAttribute("title")){
             style.removeAttribute("disabled");
         }
         else{
             style.setAttribute("disabled","true");
         }
     })
+}
+
+if(localStorage.getItem("color")!==null){
+    changecolor();
 }
 
 //modes
@@ -34,6 +42,7 @@ daynight.addEventListener("click",()=>{
     daynight.querySelector("i").classList.toggle("fa-moon");
     document.body.classList.toggle("dark");
 })
+
 window.addEventListener("load",()=>{
     if(document.body.classList.contains("dark")){
         daynight.querySelector("i").classList.add("fa-sun");

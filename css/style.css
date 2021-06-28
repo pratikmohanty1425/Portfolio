@@ -38,6 +38,9 @@ body{
     overflow-x : hidden;
     background-color: var(--bg-black-50);
 }
+body.stop-scrolling{
+    overflow-y: hidden;
+}
 *:not(i){
     font-family: 'Raleway', sans-serif;
     font-weight: 400;
@@ -1036,6 +1039,13 @@ portfolio
     display: flex;
     flex-wrap: wrap;
 }
+.portfolio-section .portfolio-item.hide{
+    display: block;
+}
+.portfolio-section .portfolio-item.show{
+    display: none;
+    animation: fadeInTop 0.5s ease;
+}
 .portfolio-section .portfolio-item-inner{
     padding: 15px;
     border-radius: 5px;
@@ -1070,6 +1080,7 @@ portfolio
     transform: translateY(0px);
     opacity: 1;
 }
+.portfolio-section .portfolio-item-category,
 .portfolio-section .portfolio-item-details{
     display: none;
 }
@@ -1092,9 +1103,40 @@ portfolio popup
     width: 100%;
     height: 100%;
     z-index: 1000;
-    overflow-y: auto;
+    overflow-y: scroll;
     opacity: 0;
     visibility: hidden;
+    transition: all 0.3s ease;
+}
+.portfolio-popup.open{
+    visibility: visible;
+    opacity: 1;
+}
+.portfolio-popup .pp-loader{
+    position: fixed;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 1005;
+    background-color: var(--bg-opacity);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    visibility: hidden;
+}
+.portfolio-popup .pp-loader.active{
+    visibility: visible;
+    opacity: 1;
+}
+.portfolio-popup .pp-loader div{
+    height: 40px;
+    width: 40px;
+    border: 3px solid var(--skin-color);
+    border-radius: 50%;
+    border-right: 3px solid transparent;
+    animation: spin 2s infinite;
 }
 .portfolio-popup .pp-details{
     max-width: 1350px;
@@ -1103,6 +1145,10 @@ portfolio popup
     max-height: 0;
     overflow: hidden;
     opacity: 0;
+    transition: all 0.3s ease;
+}
+.portfolio-popup .pp-details.active{
+    opacity: 1;
 }
 .portfolio-popup .pp-title{
     padding: 0 15px;
@@ -1125,6 +1171,7 @@ portfolio popup
 }
 .portfolio-popup .pp-title p span{
     font-weight: 400;
+    text-transform: capitalize;
 }
 .portfolio-popup .pp-project-details h3{
     font-size: 20px;
@@ -1155,6 +1202,9 @@ portfolio popup
     font-size: 16px;
     font-weight: 600;
     color: var(--text-black-600);
+}
+.portfolio-popup .info ul li a{
+    color: var(--skin-color)
 }
 .portfolio-popup .info ul li span{
     font-weight: 400;
